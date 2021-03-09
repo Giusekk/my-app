@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/assets/css/MenuNavBar.css","webpack://src/assets/css/Messaggi.css"],"names":[],"mappings":"AAAA,MACI,kBACJ,CCFA,yBACI,wBACJ","file":"main.163922ba.chunk.css","sourcesContent":[".menu {\n    margin-bottom: 90px;\n}\n\n\n",".rce-mbox.rce-mbox-right {\n    background-color: #dafccc;\n}\n\n"]}
