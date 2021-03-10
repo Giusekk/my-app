@@ -16,6 +16,11 @@ object-assign
    */
 
 /*!
+ * Geolocator.js https://github.com/onury/geolocator
+ * @license MIT. © 2019, Onur Yıldırım
+ */
+
+/*!
  * jQuery JavaScript Library v3.6.0
  * https://jquery.com/
  *
@@ -29,7 +34,61 @@ object-assign
  * Date: 2021-03-02T17:08Z
  */
 
+/*! ../lib/fetch */
+
+/*! ../lib/utils */
+
+/*! ./core/geolocator */
+
+/*! ./enums */
+
+/*! ./geo.error */
+
+/*! ./geo.helper */
+
+/*! ./geo.watcher */
+
+/*! ./utils */
+
 /*! @license https://github.com/onury/invert-color */
+
+/*! exports provided: default */
+
+/*! exports provided: geolocator */
+
+/*! no static exports found */
+
+/*!**********************!*\
+        !*** ./src/index.js ***!
+        \**********************/
+
+/*!**************************!*\
+        !*** ./src/lib/fetch.js ***!
+        \**************************/
+
+/*!**************************!*\
+        !*** ./src/lib/utils.js ***!
+        \**************************/
+
+/*!***************************!*\
+        !*** ./src/core/enums.js ***!
+        \***************************/
+
+/*!*******************************!*\
+        !*** ./src/core/geo.error.js ***!
+        \*******************************/
+
+/*!********************************!*\
+        !*** ./src/core/geo.helper.js ***!
+        \********************************/
+
+/*!********************************!*\
+        !*** ./src/core/geolocator.js ***!
+        \********************************/
+
+/*!*********************************!*\
+        !*** ./src/core/geo.watcher.js ***!
+        \*********************************/
 
 /**
  * A better abstraction over CSS.
