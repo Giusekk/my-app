@@ -28,13 +28,13 @@ function App() {
        <Router>
          <Heading />
          <Switch>
-           <Route path="/my-app" exact>
+           <Route path="https://giusekk.github.io/my-app/" exact>
              <Main />
            </Route>
-           <Route path="/my-app/article/:id">
+           <Route path="https://giusekk.github.io/my-app/article/:id">
              <ViewArticle />
            </Route>
-           <Route path="/my-app/new-article">
+           <Route path="https://giusekk.github.io/my-app/new-article">
              <p>NEW ARTICLE</p>
            </Route>
          </Switch>
