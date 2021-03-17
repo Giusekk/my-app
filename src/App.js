@@ -28,7 +28,7 @@ function App() {
        <Router>
          <Heading />
          <Switch>
-           <Route path="/" exact>
+           <Route path="/my-app" exact>
              <Main />
            </Route>
            <Route path="/article/:id">
