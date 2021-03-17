@@ -28,7 +28,7 @@ function App() {
        <Router>
          <Heading />
          <Switch>
-           <Route path="/home" exact>
+           <Route path="/" exact>
              <Main />
            </Route>
            <Route path="/article/:id">
@@ -40,7 +40,6 @@ function App() {
          </Switch>
        </Router>
        <p>saaa</p>
-       <h1>SIII</h1>
     </Div>
   );
 }
