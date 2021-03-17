@@ -28,7 +28,7 @@ function App() {
        <Router>
          <Heading />
          <Switch>
-           <Route path="/my-app" exact>
+           <Route path="https://giusekk.github.io/my-app/" exact>
              <Main />
            </Route>
            <Route path="/article/:id">
