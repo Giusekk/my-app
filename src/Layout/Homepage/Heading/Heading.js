@@ -28,7 +28,7 @@ class Heading extends Component {
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
-                            <NavLink href="/my-app/new-article">New Article</NavLink>
+                            <NavLink href="my-app/new-article">New Article</NavLink>
                         </NavItem>
                     </Nav>
                     <UncontrolledDropdown>
