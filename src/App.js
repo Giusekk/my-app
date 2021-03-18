@@ -26,7 +26,7 @@ function App() {
 
   return (
     <Div>
-       <Router basename={process.env.PUBLIC_URL + "/"}>
+       <Router basename={process.env.PUBLIC_URL}>
          <Heading />
          <Switch>
            <Route path="/" exact>
@@ -35,7 +35,7 @@ function App() {
            <Route exact path="/article/:id">
              <ViewArticle />
            </Route>
-           <Route path="new-article">
+           <Route path="/new-article">
              <NewArticle />
            </Route>
            <Route path="/d">
