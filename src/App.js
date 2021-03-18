@@ -26,7 +26,7 @@ function App() {
 
   return (
     <Div>
-       <Router>
+       <Router basename={process.env.PUBLIC_URL}>
          <Heading />
          <Switch>
            <Route path="/my-app" exact>
