@@ -3,13 +3,13 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
-
+import { HashRouter } from 'react-router-dom';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <HashRouter>
     <App />
     
-  </React.StrictMode>,
+  </HashRouter>,
   document.getElementById('root')
 );
 
