@@ -2,7 +2,8 @@ import React from "react";
 import set_mobile_theme from './assets/styles_js/bg_theme';
 
 //ROUTER
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+//import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {HashRouter, Switch, Route} from 'react-router-dom';
 
 
 // JQUERY JS
@@ -26,7 +27,7 @@ function App() {
 
   return (
     <Div>
-       <Router basename={process.env.PUBLIC_URL + "/"}>
+       <HashRouter basename={process.env.PUBLIC_URL + "/"}>
          <Heading />
          <Switch>
            <Route path="/" exact>
@@ -42,7 +43,7 @@ function App() {
              <p>sada</p>
            </Route>
          </Switch>
-       </Router>
+       </HashRouter>
        <a href="/my-app/d">Ciao</a>
     </Div>
   );
