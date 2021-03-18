@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import {Navbar, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownItem, DropdownMenu, Collapse, NavbarToggler} from 'reactstrap';
-
+import {Navbar, NavbarBrand, Nav, NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownItem, DropdownMenu, Collapse, NavbarToggler, Button} from 'reactstrap';
+import {connect} from 'react-redux';
+import firebase from '../../../Config/firebase';
+import {Link} from 'react-router-dom';
 
 class Heading extends Component {
     constructor(props) {
@@ -19,6 +21,7 @@ class Heading extends Component {
 
     // navbar color mode
     navbar_color = "light";
+    a =  process.env.PUBLIC_URL + "/#/";
 
     render() {
         return (
@@ -35,13 +38,20 @@ class Heading extends Component {
                         <DropdownToggle nav caret>
                             Options
                         </DropdownToggle>
-                        <DropdownMenu>
-                            <DropdownItem>
-                                Login
-                            </DropdownItem>
-                            <DropdownItem>
-                                Logout
-                            </DropdownItem>
+                        <DropdownMenu right>
+                            {
+
+                                this.props.auth.isEmpty ?
+                                    <DropdownItem>
+                                        <a href="#/login">Login</a>
+                                    </DropdownItem>
+                                    : 
+                                    <DropdownItem>
+                                        <Button onClick={() => firebase.auth.signOut()}>
+                                            Logout
+                                        </Button>
+                                    </DropdownItem>     
+                            }
                         </DropdownMenu>
                     </UncontrolledDropdown>
                 </Collapse>
@@ -50,4 +60,11 @@ class Heading extends Component {
     }
 }
 
-export default Heading
+const enhance = connect(
+    ({firebase: {auth, profile}}) => ({
+        auth,
+        profile
+    })
+)
+
+export default enhance(Heading);
