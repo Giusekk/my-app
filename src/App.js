@@ -39,6 +39,9 @@ function App() {
            <Route path="/my-app/new-article">
              <NewArticle />
            </Route>
+           <Route path="/my-app/d">
+             <p>sada</p>
+           </Route>
          </Switch>
        </Router>
     </Div>
