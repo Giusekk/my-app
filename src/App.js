@@ -30,7 +30,8 @@ function App() {
          <Heading />
          <Switch>
            <Route path="/my-app" exact>
-             <Main />
+             {/*<Main />*/}
+             <NewArticle />
            </Route>
            <Route path="/my-app/article/:id">
              <ViewArticle />
@@ -38,9 +39,9 @@ function App() {
            <Route path="/my-app/new-article">
              <NewArticle />
            </Route>
+          
          </Switch>
        </Router>
-    <p>sd</p>
     </Div>
   );
 }
