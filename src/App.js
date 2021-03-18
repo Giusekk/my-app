@@ -20,6 +20,7 @@ import Main from './Layout/Homepage/Main/Main.js';
 import Heading from './Layout/Homepage/Heading/Heading.js';
 import ViewArticle from "./Layout/Homepage/ViewArticle/ViewArticle";
 import NewArticle from "./Layout/Homepage/NewArticle/NewArticle";
+import { Home } from "@material-ui/icons";
 
 function App() {
   set_mobile_theme();
@@ -29,19 +30,21 @@ function App() {
        <Router basename={process.env.PUBLIC_URL}>
          <Heading />
          <Switch>
-           <Route path="/my-app" exact>
-             {/*<Main />*/}
+           {/*<Route path="/my-app" component={NewArticle} exact>
+             <Main />
              <NewArticle />
            </Route>
-           <Route path="/my-app/article/:id">
+           <Route exact path="/my-app/article/:id">
              <ViewArticle />
            </Route>
-           <Route path="/my-app/new-article">
+           <Route component={NewArticle} path="new-article">
              <NewArticle />
            </Route>
            <Route path="/my-app/d">
              <p>sada</p>
-           </Route>
+            </Route>*/}
+            <Route exact path="/" component={Main} />
+            <Route exact path="/new-article" component={NewArticle} />
          </Switch>
        </Router>
        <a href="/my-app/d">Ciao</a>
