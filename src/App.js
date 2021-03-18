@@ -35,7 +35,7 @@ function App() {
            <Route exact path="/article/:id">
              <ViewArticle />
            </Route>
-           <Route path="/new-article">
+           <Route path="new-article">
              <NewArticle />
            </Route>
            <Route path="/d">
