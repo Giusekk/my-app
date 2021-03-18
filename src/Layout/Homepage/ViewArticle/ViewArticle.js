@@ -76,7 +76,7 @@ class ViewArticle extends Component {
                         <Div className={classes.ImageContainer}>
                             <img    
                                 className={classes.Image} 
-                                src={'https://placeimg.com/600/400/any'}
+                                src={this.state.article.featureImage}
                                 alt={this.state.article.title}
                             />
                             <Div className={classes.ArticleInfo}>

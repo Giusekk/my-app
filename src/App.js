@@ -19,6 +19,7 @@ import Main from './Layout/Homepage/Main/Main.js';
 //HEADING
 import Heading from './Layout/Homepage/Heading/Heading.js';
 import ViewArticle from "./Layout/Homepage/ViewArticle/ViewArticle";
+import NewArticle from "./Layout/Homepage/NewArticle/NewArticle";
 
 function App() {
   set_mobile_theme();
@@ -35,7 +36,7 @@ function App() {
              <ViewArticle />
            </Route>
            <Route path="/my-app/new-article">
-             <p>NEW ARTICLE</p>
+             <NewArticle />
            </Route>
          </Switch>
        </Router>

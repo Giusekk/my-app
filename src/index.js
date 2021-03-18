@@ -5,8 +5,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 
 
-
-
 ReactDOM.render(
   <React.StrictMode>
     <App />
