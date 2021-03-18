@@ -44,6 +44,7 @@ function App() {
            </Route>
          </Switch>
        </Router>
+       <a href="/my-app/d">Ciao</a>
     </Div>
   );
 }
