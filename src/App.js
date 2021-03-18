@@ -29,9 +29,8 @@ function App() {
        <Router >
          <Heading />
          <Switch>
-           <Route path="/my-app" component={NewArticle} exact>
-             {/*<Main />*/}
-             <NewArticle />
+           <Route path="/my-app" exact>
+             <Main />
            </Route>
            <Route exact path="/my-app/article/:id">
              <ViewArticle />
@@ -39,7 +38,7 @@ function App() {
            <Route path="/my-app/new-article">
              <NewArticle />
            </Route>
-           <Route path="/my-app/d">
+           <Route path="/d">
              <p>sada</p>
            </Route>
          </Switch>
