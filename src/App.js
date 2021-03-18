@@ -28,18 +28,17 @@ function App() {
        <Router>
          <Heading />
          <Switch>
-           <Route path="https://giusekk.github.io/my-app/" exact>
+           <Route path="/my-app" exact>
              <Main />
            </Route>
-           <Route path="https://giusekk.github.io/my-app/article/:id">
+           <Route path="/my-app/article/:id">
              <ViewArticle />
            </Route>
-           <Route path="https://giusekk.github.io/my-app/new-article">
+           <Route path="/my-app/new-article">
              <p>NEW ARTICLE</p>
            </Route>
          </Switch>
        </Router>
-       <p>saaa</p>
     </Div>
   );
 }

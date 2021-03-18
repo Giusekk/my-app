@@ -16,15 +16,19 @@ class Heading extends Component {
         });
     }
 
+
+    // navbar color mode
+    navbar_color = "light";
+
     render() {
         return (
-            <Navbar color="light" light expand="md">
-                <NavbarBrand href={"/"}>My blog</NavbarBrand>
+            <Navbar color={this.navbar_color} light expand="md">
+                <NavbarBrand href={"/my-app"}>My blog</NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
-                            <NavLink href="/new-article">New Article</NavLink>
+                            <NavLink href="/my-app/new-article">New Article</NavLink>
                         </NavItem>
                     </Nav>
                     <UncontrolledDropdown>

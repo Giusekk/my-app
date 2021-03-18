@@ -13,7 +13,7 @@ const ArticleCard = (props) => {
   return (
     <Card className={classes.ArticleCard}>
       <Link to={{
-        pathname: "article/" + props.data.id,
+        pathname: "/my-app/article/" + props.data.id,
         state: {article: props.data}
       }}>
         <CardImg 
@@ -28,7 +28,7 @@ const ArticleCard = (props) => {
         <CardTitle className={classes.CardTitle}>
           <Link 
             to={{
-              pathname: "article/" + props.data.id,
+              pathname: "/my-app/article/" + props.data.id,
               state: {article: props.data}
             }}>
             {props.data.title}
