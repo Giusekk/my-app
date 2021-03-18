@@ -128,7 +128,7 @@ class NewArticle extends Component {
                         </FormGroup>
                     </Col>
                     <Col xl={3} lg={3} md={4} sm={12} xs={12}>
-                        <Card>
+                        <Card className={classes.card_mobile} >
                             <CardHeader>
                                 Article Settings
                             </CardHeader>

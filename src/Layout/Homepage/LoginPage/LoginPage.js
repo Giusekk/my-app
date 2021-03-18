@@ -7,7 +7,10 @@ import 'firebase/auth';
 
 const uiConfig = {
     signInFlow: 'popup',
-    signInSuccessUrl: '/'
+    signInSuccessUrl: '/',
+    signInOptions: [
+        firebase.auth.GoogleAuthProvider.PROVIDER_ID
+    ]
 }
 
 
@@ -19,7 +22,7 @@ class LoginPage extends Component {
     render() {
         return (
             <Container>
-
+                <StyledFirebaseAuth  uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
             </Container>
         )
     }
