@@ -26,16 +26,16 @@ function App() {
 
   return (
     <Div>
-       <Router >
+       <Router basename={process.env.PUBLIC_URL + "/"}>
          <Heading />
          <Switch>
-           <Route path="/my-app" exact>
+           <Route path="/" exact>
              <Main />
            </Route>
-           <Route exact path="/my-app/article/:id">
+           <Route exact path="/article/:id">
              <ViewArticle />
            </Route>
-           <Route path="/my-app/new-article">
+           <Route path="/new-article">
              <NewArticle />
            </Route>
            <Route path="/d">
