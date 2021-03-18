@@ -39,7 +39,6 @@ function App() {
            <Route path="/my-app/new-article">
              <NewArticle />
            </Route>
-          
          </Switch>
        </Router>
     </Div>
