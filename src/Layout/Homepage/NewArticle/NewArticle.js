@@ -84,7 +84,14 @@ class NewArticle extends Component {
         })
     }
 
-
+    onChangePublish = (val) => {
+        this.setState({
+            article: {
+                ...this.state.article,
+                isPublish: val === 'True'
+            }
+        })
+    }
 
     render() {
         return (
@@ -132,6 +139,7 @@ class NewArticle extends Component {
                                         type="select"
                                         name="publish"
                                         id="publish"
+                                        onChange={(e) => this.onChangePublish(e.target.value)}
                                     >
                                         <option>False</option>
                                         <option>True</option>
