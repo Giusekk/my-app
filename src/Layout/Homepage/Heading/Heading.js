@@ -23,7 +23,7 @@ class Heading extends Component {
     render() {
         return (
             <Navbar color={this.navbar_color} light expand="md">
-                <NavbarBrand href={"/"}>My blog</NavbarBrand>
+                <NavbarBrand href={"/my-app/#/"}>My blog</NavbarBrand>
                 <NavbarToggler onClick={this.toggle} />
                 <Collapse isOpen={this.state.isOpen} navbar>
                     <Nav className="mr-auto" navbar>
